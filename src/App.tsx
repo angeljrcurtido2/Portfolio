@@ -273,7 +273,7 @@ export default function App() {
           Contáctame para colaborar en proyectos web modernos y optimizados.
         </p>
         <a
-          href="mailto:tuemail@correo.com"
+          href="mailto:angeljrcurtido@gmail.com"
           className="px-6 py-3 bg-blue-500 rounded-lg shadow hover:bg-blue-600 transition"
         >
           Contáctame
