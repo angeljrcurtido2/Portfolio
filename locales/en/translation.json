@@ -1,0 +1,47 @@
+{
+  "brand": "MyPortfolio",
+  "aria": {
+    "toggleLang": "Toggle language"
+  },
+  "nav": {
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi! I'm Angel Curtido",
+    "description": "I am a Systems Analyst graduate and Frontend Developer with experience in React, Next.js, TypeScript, and TailwindCSS. I also build Android mobile apps with React Native and Expo, and I have backend knowledge with Node.js (Express) and PHP/Laravel. My focus is creating modern, optimized interfaces that deliver fast and functional experiences on both web and mobile.",
+    "button": "View my projects"
+  },
+  "projects": {
+    "title": "My Projects",
+    "technologiesLabel": "Technologies:",
+    "viewDetails": "View details",
+    "alt": "Screenshot of {{title}}",
+    "items": {
+      "ecommerce": {
+        "title": "Ecommerce",
+        "description": "An e-commerce system with an admin panel built with Next.js and Node.js. It’s a personal project by Ángel Curtido, a Systems Analysis graduate and full-stack developer. The app is built from scratch with a custom design, is fully responsive, and uses MySQL. This project is part of my professional portfolio, showcasing my ability to design, implement, and deploy a modern online store that manages the entire purchase flow, plus a complete admin panel for managing products, orders, and users."
+      },
+      "inventory": {
+        "title": "InventorySys",
+        "description": "A desktop application for inventory management, built with Electron, Vite, React, and TypeScript on the frontend, and Node.js with Express and MySQL on the backend. It implements secure authentication with JWT and cookies, provides a modern UI with data visualization via charts and maps, generates PDF reports, and sends email notifications. It’s a cross-platform solution (Windows, macOS, Linux) designed to optimize inventory operations with automated backups and scheduled tasks."
+      },
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "A web app showcasing my professional portfolio, highlighting my projects and skills as a full-stack developer. Built with Vite, React, and TypeScript, it includes an interactive technologies carousel using React Slick and a modern design with Tailwind CSS. The app is fully responsive and optimized to provide a smooth experience across mobile and desktop. It includes sections for projects, technologies, and contact, with a focus on usability and visual design."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "contact": {
+    "title": "Want to work with me?",
+    "description": "Reach out to collaborate on modern and optimized web projects.",
+    "button": "Contact me"
+  },
+  "footer": {
+    "copy": "© {{year}} Angel | All rights reserved"
+  }
+}

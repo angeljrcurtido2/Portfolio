@@ -1,0 +1,47 @@
+{
+  "brand": "MiPortafolio",
+  "aria": {
+    "toggleLang": "Cambiar idioma"
+  },
+  "nav": {
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "¡Hola! Soy Angel Curtido",
+    "description": "Soy Licenciado en Análisis de Sistemas y Desarrollador Frontend con experiencia en React, Next.js, TypeScript y TailwindCSS. También desarrollo apps móviles para Android con React Native y Expo, y cuento con conocimientos en backend con Node.js (Express) y PHP/Laravel. Mi enfoque es crear interfaces modernas y optimizadas, ofreciendo experiencias rápidas y funcionales tanto en web como en móvil.",
+    "button": "Ver mis proyectos"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "technologiesLabel": "Tecnologías:",
+    "viewDetails": "Ver detalles",
+    "alt": "Captura de pantalla de {{title}}",
+    "items": {
+      "ecommerce": {
+        "title": "Ecommerce",
+        "description": "Un sistema de comercio electrónico con panel de administración desarrollado con Next.js y Node.js. Es un proyecto personal de Ángel Curtido, graduado en Análisis de Sistemas y desarrollador full-stack. La aplicación está desarrollada desde cero con un diseño personalizado, es totalmente responsiva y está basada en MySQL. Este proyecto forma parte de mi portafolio profesional, donde demuestro mi capacidad para diseñar, implementar e implementar una tienda online moderna que gestiona todo el proceso de compra, además de un completo panel de administración para la gestión de productos, pedidos y usuarios."
+      },
+      "inventory": {
+        "title": "InventorySys",
+        "description": "Una aplicación de escritorio para la gestión de inventarios, desarrollada con Electron, Vite, React y TypeScript para el frontend, y Node.js con Express y MySQL para el backend. Implementa autenticación segura con JWT y cookies, ofrece una interfaz moderna con visualización de datos mediante gráficos y mapas, generación de reportes en PDF y notificaciones por correo electrónico. Es una solución multiplataforma compatible con Windows, macOS y Linux, diseñada para optimizar la gestión de inventarios con backups automatizados y tareas programadas."
+      },
+      "portfolio": {
+        "title": "Portafolio Personal",
+        "description": "Una aplicación web que muestra mi portafolio profesional, destacando mis proyectos y habilidades como desarrollador full-stack. Desarrollada con Vite, React y TypeScript, incluye un carrusel interactivo de tecnologías creado con React Slick y un diseño moderno con Tailwind CSS. La aplicación es completamente responsiva y optimizada para ofrecer una experiencia fluida en dispositivos móviles y de escritorio. Incluye secciones para proyectos, tecnologías y contacto, con un enfoque en la usabilidad y el diseño visual."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  },
+  "contact": {
+    "title": "¿Quieres trabajar conmigo?",
+    "description": "Contáctame para colaborar en proyectos web modernos y optimizados.",
+    "button": "Contáctame"
+  },
+  "footer": {
+    "copy": "© {{year}} Angel | Todos los derechos reservados"
+  }
+}
