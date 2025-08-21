@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import imagenEcommerce from './assets/IMAGEN_PARA_ECOMMERCE.png';
+import imagenPortfolio from './assets/PROYECTO_PORTAFOLIO.png';
 import imagenSys from './assets/IMAGEN_SYS.png';
 import {
   SiNextdotjs,
@@ -87,6 +88,23 @@ export default function App() {
         "Git",
       ],
     },
+    {
+      title: "Personal Portfolio",
+      imagen: imagenPortfolio,
+      description:
+        "Una aplicación web que muestra mi portafolio profesional, destacando mis proyectos y habilidades como desarrollador full-stack. Desarrollada con Vite, React y TypeScript, incluye un carrusel interactivo de tecnologías creado con React Slick y un diseño moderno con Tailwind CSS. La aplicación es completamente responsiva y optimizada para ofrecer una experiencia fluida en dispositivos móviles y de escritorio. Incluye secciones para proyectos, tecnologías y contacto, con un enfoque en la usabilidad y el diseño visual.",
+      link: "https://github.com/angeljrcurtido2/portfolio",
+      tecnologias: [
+        "Vite",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Slick",
+        "React Icons",
+        "npm",
+        "Git",
+      ],
+    },
   ];
 
   // Extract unique technologies
@@ -122,6 +140,8 @@ export default function App() {
     jsreport: <PiFileJsFill className="text-4xl" />,
     "node-cron": <SiClockify className="text-4xl" />,
     dotenv: <SiGnubash className="text-4xl" />,
+    "React Slick": <SiReact className="text-4xl" />, // Using React icon as a fallback
+    "React Icons": <SiIconify className="text-4xl" />,
   };
 
   // Configuración del carrusel
@@ -133,8 +153,8 @@ export default function App() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true, // Centra los elementos
-    centerPadding: "20px", // Espaciado adicional en los bordes
+    centerMode: true,
+    centerPadding: "20px",
     responsive: [
       {
         breakpoint: 1024,
