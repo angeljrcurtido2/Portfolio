@@ -107,10 +107,8 @@ export default function App() {
     },
   ];
 
-  // Extract unique technologies
   const allTechnologies = [...new Set(Project.flatMap((project) => project.tecnologias))];
 
-  // Map technologies to icons
   const techIcons: { [key: string]: JSX.Element } = {
     "Next.js": <SiNextdotjs className="text-4xl" />,
     React: <SiReact className="text-4xl" />,
@@ -140,11 +138,10 @@ export default function App() {
     jsreport: <PiFileJsFill className="text-4xl" />,
     "node-cron": <SiClockify className="text-4xl" />,
     dotenv: <SiGnubash className="text-4xl" />,
-    "React Slick": <SiReact className="text-4xl" />, // Using React icon as a fallback
+    "React Slick": <SiReact className="text-4xl" />, 
     "React Icons": <SiIconify className="text-4xl" />,
   };
 
-  // Configuración del carrusel
   const settings = {
     dots: true,
     infinite: true,
