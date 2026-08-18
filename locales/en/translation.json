@@ -17,6 +17,10 @@
     "title": "My Projects",
     "technologiesLabel": "Technologies:",
     "viewDetails": "View details",
+    "viewGallery": "View gallery & demo",
+    "closeGallery": "Close gallery",
+    "openGallery": "Expand {{title}} gallery",
+    "videoUnsupported": "Your browser does not support video playback.",
     "alt": "Screenshot of {{title}}",
     "items": {
       "ecommerce": {
@@ -30,6 +34,16 @@
       "portfolio": {
         "title": "Personal Portfolio",
         "description": "A web app showcasing my professional portfolio, highlighting my projects and skills as a full-stack developer. Built with Vite, React, and TypeScript, it includes an interactive technologies carousel using React Slick and a modern design with Tailwind CSS. The app is fully responsive and optimized to provide a smooth experience across mobile and desktop. It includes sections for projects, technologies, and contact, with a focus on usability and visual design."
+      },
+      "credisoft": {
+        "title": "ElectroMar / CrediSoft — Credit Sales System",
+        "description": "Custom-built desktop system for Credimar S.A., an appliance retailer with 14 branches in Paraguay. Built with C#/.NET 8 (WPF) and SQL Server, it manages the full credit and cash sales cycle: applications, installment collection, adjustments and Inforconf integration, per-branch cash register, purchases and inter-branch transfers, credit-note discounts, PDF reporting, and cross-branch sync via Cloudflare Tunnel. Freelance project in active production since 2026, successfully deployed and used daily by staff across all 14 branches.",
+        "gallery": {
+          "login": "Login screen",
+          "dashboard": "Main dashboard",
+          "cobroCuota": "Installment collection module",
+          "simulador": "Per-item credit simulator"
+        }
       }
     }
   },

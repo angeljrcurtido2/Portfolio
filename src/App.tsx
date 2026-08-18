@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import Slider from "react-slick";
@@ -35,12 +35,24 @@ import {
   SiClockify,
   SiGnubash,
   SiDatacamp,
+  SiDotnet,
+  SiSharp,
+  SiCloudflare,
 } from "react-icons/si";
 import { PiFileJsFill } from "react-icons/pi";
+import { PiDatabaseFill } from "react-icons/pi";
 import type { JSX } from "react";
+
+const credisoftGaleria = [
+  { src: "/credisoft/dashboard.jpg", labelKey: "dashboard" },
+  { src: "/credisoft/login.jpg", labelKey: "login" },
+  { src: "/credisoft/cobro-cuota.jpg", labelKey: "cobroCuota" },
+  { src: "/credisoft/simulador-credito.jpg", labelKey: "simulador" },
+];
 
 export default function App() {
   const { t, i18n } = useTranslation();
+  const [galeriaAbierta, setGaleriaAbierta] = useState(false);
 
   const techIcons: { [key: string]: JSX.Element } = {
     "Next.js": <SiNextdotjs className="text-4xl" />,
@@ -73,6 +85,12 @@ export default function App() {
     dotenv: <SiGnubash className="text-4xl" />,
     "React Slick": <SiReact className="text-4xl" />,
     "React Icons": <SiIconify className="text-4xl" />,
+    "C#": <SiSharp className="text-4xl" />,
+    ".NET 8": <SiDotnet className="text-4xl" />,
+    WPF: <SiDotnet className="text-4xl" />,
+    "SQL Server": <PiDatabaseFill className="text-4xl" />,
+    Dapper: <SiDotnet className="text-4xl" />,
+    "Cloudflare Tunnel": <SiCloudflare className="text-4xl" />,
   };
 
   const projects = useMemo(
@@ -143,6 +161,23 @@ export default function App() {
           "React Slick",
           "React Icons",
           "npm",
+          "Git",
+        ],
+      },
+      {
+        key: "credisoft",
+        title: t("projects.items.credisoft.title"),
+        imagen: credisoftGaleria[0].src,
+        description: t("projects.items.credisoft.description"),
+        link: "https://github.com/angeljrcurtido2/SistemaMultiLocal",
+        tieneGaleria: true,
+        tecnologias: [
+          "C#",
+          ".NET 8",
+          "WPF",
+          "SQL Server",
+          "Dapper",
+          "Cloudflare Tunnel",
           "Git",
         ],
       },
@@ -248,11 +283,22 @@ export default function App() {
               key={project.key}
               className="bg-gray-700 rounded-xl p-6 shadow hover:scale-105 transition"
             >
-              <img
-                src={project.imagen}
-                alt={t("projects.alt", { title: project.title })}
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
+              <button
+                type="button"
+                onClick={() => project.tieneGaleria && setGaleriaAbierta(true)}
+                className={`w-full ${project.tieneGaleria ? "cursor-zoom-in" : "cursor-default"}`}
+                aria-label={
+                  project.tieneGaleria
+                    ? t("projects.openGallery", { title: project.title })
+                    : undefined
+                }
+              >
+                <img
+                  src={project.imagen}
+                  alt={t("projects.alt", { title: project.title })}
+                  className="w-full h-40 object-cover rounded-lg mb-4"
+                />
+              </button>
               <h4 className="text-xl font-semibold mb-2">
                 {project.title}
               </h4>
@@ -274,14 +320,25 @@ export default function App() {
                   ))}
                 </ul>
               </div>
-              <a
-                href={project.link}
-                className="text-blue-400 hover:underline text-sm font-medium"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("projects.viewDetails")} →
-              </a>
+              <div className="flex items-center gap-4">
+                <a
+                  href={project.link}
+                  className="text-blue-400 hover:underline text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("projects.viewDetails")} →
+                </a>
+                {project.tieneGaleria && (
+                  <button
+                    type="button"
+                    onClick={() => setGaleriaAbierta(true)}
+                    className="text-blue-400 hover:underline text-sm font-medium"
+                  >
+                    {t("projects.viewGallery")}
+                  </button>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -328,6 +385,56 @@ export default function App() {
       <footer className="text-center py-6 border-t border-gray-700 text-gray-400 text-sm">
         {t("footer.copy", { year: new Date().getFullYear() })}
       </footer>
+
+      {/* Galería CrediSoft/ElectroMar */}
+      {galeriaAbierta && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+          onClick={() => setGaleriaAbierta(false)}
+        >
+          <div
+            className="bg-gray-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center mb-4">
+              <h4 className="text-xl font-semibold text-blue-400">
+                {t("projects.items.credisoft.title")}
+              </h4>
+              <button
+                type="button"
+                onClick={() => setGaleriaAbierta(false)}
+                className="text-gray-300 hover:text-white text-2xl leading-none"
+                aria-label={t("projects.closeGallery")}
+              >
+                ×
+              </button>
+            </div>
+
+            <video
+              src="/credisoft/demostracion.mp4"
+              controls
+              className="w-full rounded-lg mb-6 bg-black"
+            >
+              {t("projects.videoUnsupported")}
+            </video>
+
+            <div className="grid sm:grid-cols-2 gap-4">
+              {credisoftGaleria.map((img) => (
+                <div key={img.labelKey}>
+                  <img
+                    src={img.src}
+                    alt={t(`projects.items.credisoft.gallery.${img.labelKey}`)}
+                    className="w-full rounded-lg mb-2"
+                  />
+                  <p className="text-gray-300 text-sm text-center">
+                    {t(`projects.items.credisoft.gallery.${img.labelKey}`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

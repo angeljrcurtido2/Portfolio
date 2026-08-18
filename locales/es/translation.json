@@ -17,6 +17,10 @@
     "title": "Mis Proyectos",
     "technologiesLabel": "Tecnologías:",
     "viewDetails": "Ver detalles",
+    "viewGallery": "Ver galería y demo",
+    "closeGallery": "Cerrar galería",
+    "openGallery": "Ampliar galería de {{title}}",
+    "videoUnsupported": "Tu navegador no soporta la reproducción de video.",
     "alt": "Captura de pantalla de {{title}}",
     "items": {
       "ecommerce": {
@@ -30,6 +34,16 @@
       "portfolio": {
         "title": "Portafolio Personal",
         "description": "Una aplicación web que muestra mi portafolio profesional, destacando mis proyectos y habilidades como desarrollador full-stack. Desarrollada con Vite, React y TypeScript, incluye un carrusel interactivo de tecnologías creado con React Slick y un diseño moderno con Tailwind CSS. La aplicación es completamente responsiva y optimizada para ofrecer una experiencia fluida en dispositivos móviles y de escritorio. Incluye secciones para proyectos, tecnologías y contacto, con un enfoque en la usabilidad y el diseño visual."
+      },
+      "credisoft": {
+        "title": "ElectroMar / CrediSoft — Sistema de Ventas a Crédito",
+        "description": "Sistema de escritorio a medida para Credimar S.A., empresa de electrodomésticos con 14 sucursales en Paraguay. Desarrollado en C#/.NET 8 (WPF) con SQL Server, gestiona todo el ciclo de ventas a crédito y contado: solicitudes, cobro de cuotas, reajustes e Inforconf, caja por sucursal, compras y transferencias entre locales, descuentos por Nota de Crédito, informes con generación de PDF, y sincronización entre sucursales vía Cloudflare Tunnel. Proyecto freelance en producción activa desde 2026, implementado exitosamente y en uso diario por el personal de las 14 sucursales.",
+        "gallery": {
+          "login": "Inicio de sesión",
+          "dashboard": "Dashboard principal",
+          "cobroCuota": "Módulo de cobro de cuota",
+          "simulador": "Simulador de crédito por artículo"
+        }
       }
     }
   },
