@@ -1,20 +1,26 @@
 {
-  "brand": "MiPortafolio",
+  "brand": "Angel Curtido",
   "aria": {
     "toggleLang": "Cambiar idioma"
   },
   "nav": {
     "projects": "Proyectos",
     "technologies": "Tecnologías",
+    "education": "Formación",
     "contact": "Contacto"
   },
   "hero": {
-    "title": "¡Hola! Soy Angel Curtido",
-    "description": "Soy Licenciado en Análisis de Sistemas y Desarrollador Frontend con experiencia en React, Next.js, TypeScript y TailwindCSS. También desarrollo apps móviles para Android con React Native y Expo, y cuento con conocimientos en backend con Node.js (Express) y PHP/Laravel. Mi enfoque es crear interfaces modernas y optimizadas, ofreciendo experiencias rápidas y funcionales tanto en web como en móvil.",
-    "button": "Ver mis proyectos"
+    "eyebrow": "Disponible para proyectos freelance",
+    "title": "Angel Curtido construye software que las empresas usan todos los días",
+    "description": "Licenciado en Análisis de Sistemas y desarrollador full-stack. Diseño interfaces con React, Next.js y TypeScript, y construyo sistemas de escritorio y backend con .NET, Node.js y PHP/Laravel. Mi último proyecto es un sistema de ventas a crédito en producción activa en 14 sucursales de una empresa real.",
+    "button": "Ver mis proyectos",
+    "previewCv": "Vista previa del CV",
+    "downloadCv": "Descargar CV"
   },
   "projects": {
-    "title": "Mis Proyectos",
+    "eyebrow": "Trabajo seleccionado",
+    "title": "Proyectos",
+    "featuredLabel": "En producción",
     "technologiesLabel": "Tecnologías:",
     "viewDetails": "Ver detalles",
     "viewGallery": "Ver galería y demo",
@@ -37,6 +43,7 @@
       },
       "credisoft": {
         "title": "ElectroMar / CrediSoft — Sistema de Ventas a Crédito",
+        "meta": "Cliente: Credimar S.A. · 14 sucursales · Paraguay",
         "description": "Sistema de escritorio a medida para Credimar S.A., empresa de electrodomésticos con 14 sucursales en Paraguay. Desarrollado en C#/.NET 8 (WPF) con SQL Server, gestiona todo el ciclo de ventas a crédito y contado: solicitudes, cobro de cuotas, reajustes e Inforconf, caja por sucursal, compras y transferencias entre locales, descuentos por Nota de Crédito, informes con generación de PDF, y sincronización entre sucursales vía Cloudflare Tunnel. Proyecto freelance en producción activa desde 2026, implementado exitosamente y en uso diario por el personal de las 14 sucursales.",
         "gallery": {
           "login": "Inicio de sesión",
@@ -44,16 +51,56 @@
           "cobroCuota": "Módulo de cobro de cuota",
           "simulador": "Simulador de crédito por artículo"
         }
+      },
+      "kontrolx": {
+        "title": "KontrolX — App de Ventas con Chat IA",
+        "meta": "Publicada en Google Play · React Native / Expo",
+        "playStore": "Ver en Google Play",
+        "description": "Aplicación móvil de gestión de ventas, clientes, productos y proveedores construida con React Native y Expo. Su función más distintiva es un sistema de chat con IA que permite registrar ingresos y egresos escribiendo comandos en lenguaje natural, como \"Registrar un ingreso de 150 por venta de equipos\", sin pasar por formularios. Incluye dashboard con métricas de negocio, reportes de ventas filtrables y control de contado/crédito. Publicada y disponible públicamente en Google Play Store.",
+        "gallery": {
+          "login": "Inicio de sesión",
+          "dashboard": "Dashboard con métricas",
+          "nuevaVenta": "Registro de nueva venta",
+          "reporteVentas": "Reporte de ventas",
+          "chatIa": "Chat con IA para ingresos",
+          "egresosChat": "Chat con IA para egresos"
+        }
       }
     }
   },
   "technologies": {
-    "title": "Tecnologías"
+    "eyebrow": "Stack",
+    "title": "Tecnologías que uso"
+  },
+  "education": {
+    "eyebrow": "Credenciales",
+    "title": "Formación",
+    "viewCredential": "Ver credencial",
+    "items": {
+      "universidad": {
+        "title": "Licenciatura en Análisis de Sistemas",
+        "institution": "Universidad Americana",
+        "meta": "Asunción, Paraguay · 17 de septiembre de 2024"
+      },
+      "codingdojo": {
+        "title": "Software Development Online Part-Time Accelerated",
+        "institution": "Coding Dojo",
+        "meta": "Bootcamp de desarrollo de software"
+      },
+      "linkedin": {
+        "title": "Fundamentos profesionales de análisis de datos",
+        "institution": "Microsoft y LinkedIn Learning",
+        "meta": "4 de julio de 2023"
+      }
+    }
   },
   "contact": {
-    "title": "¿Quieres trabajar conmigo?",
-    "description": "Contáctame para colaborar en proyectos web modernos y optimizados.",
-    "button": "Contáctame"
+    "eyebrow": "Contacto directo",
+    "title": "Hablemos de tu proyecto",
+    "description": "Escribime por WhatsApp o correo y te respondo a la brevedad.",
+    "button": "Contáctame",
+    "phoneLabel": "WhatsApp",
+    "emailLabel": "Correo"
   },
   "footer": {
     "copy": "© {{year}} Angel | Todos los derechos reservados"

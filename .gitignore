@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Herramienta local para generar el PDF del CV (no es parte del sitio)
+cv-build/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

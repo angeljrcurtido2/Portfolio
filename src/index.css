@@ -1,2 +1,59 @@
-
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --color-ink: #0b0f14;
+  --color-ink-soft: #131a22;
+  --color-ink-line: #212b36;
+  --color-paper: #e4e7eb;
+  --color-paper-dim: #8b93a1;
+  --color-teal: #5eead4;
+  --color-teal-dim: #2dd4bf;
+  --color-amber: #f59e0b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background-color: var(--color-teal);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, var(--color-ink-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-ink-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 0 1px rgba(94, 234, 212, 0.15), 0 0 40px rgba(94, 234, 212, 0.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

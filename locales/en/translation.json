@@ -1,20 +1,26 @@
 {
-  "brand": "MyPortfolio",
+  "brand": "Angel Curtido",
   "aria": {
     "toggleLang": "Toggle language"
   },
   "nav": {
     "projects": "Projects",
     "technologies": "Technologies",
+    "education": "Education",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hi! I'm Angel Curtido",
-    "description": "I am a Systems Analyst graduate and Frontend Developer with experience in React, Next.js, TypeScript, and TailwindCSS. I also build Android mobile apps with React Native and Expo, and I have backend knowledge with Node.js (Express) and PHP/Laravel. My focus is creating modern, optimized interfaces that deliver fast and functional experiences on both web and mobile.",
-    "button": "View my projects"
+    "eyebrow": "Available for freelance work",
+    "title": "Angel Curtido builds software companies use every day",
+    "description": "Systems Analysis graduate and full-stack developer. I design interfaces with React, Next.js, and TypeScript, and build desktop systems and backends with .NET, Node.js, and PHP/Laravel. My latest project is a credit sales system in active production across 14 branches of a real business.",
+    "button": "View my projects",
+    "previewCv": "Preview CV",
+    "downloadCv": "Download CV"
   },
   "projects": {
-    "title": "My Projects",
+    "eyebrow": "Selected work",
+    "title": "Projects",
+    "featuredLabel": "In production",
     "technologiesLabel": "Technologies:",
     "viewDetails": "View details",
     "viewGallery": "View gallery & demo",
@@ -37,6 +43,7 @@
       },
       "credisoft": {
         "title": "ElectroMar / CrediSoft — Credit Sales System",
+        "meta": "Client: Credimar S.A. · 14 branches · Paraguay",
         "description": "Custom-built desktop system for Credimar S.A., an appliance retailer with 14 branches in Paraguay. Built with C#/.NET 8 (WPF) and SQL Server, it manages the full credit and cash sales cycle: applications, installment collection, adjustments and Inforconf integration, per-branch cash register, purchases and inter-branch transfers, credit-note discounts, PDF reporting, and cross-branch sync via Cloudflare Tunnel. Freelance project in active production since 2026, successfully deployed and used daily by staff across all 14 branches.",
         "gallery": {
           "login": "Login screen",
@@ -44,16 +51,56 @@
           "cobroCuota": "Installment collection module",
           "simulador": "Per-item credit simulator"
         }
+      },
+      "kontrolx": {
+        "title": "KontrolX — Sales App with AI Chat",
+        "meta": "Published on Google Play · React Native / Expo",
+        "playStore": "View on Google Play",
+        "description": "Mobile app for managing sales, customers, products, and suppliers, built with React Native and Expo. Its standout feature is an AI chat system that lets users log income and expenses by typing natural-language commands, like \"Log income of 150 from equipment sale\", skipping forms entirely. It includes a business metrics dashboard, filterable sales reports, and cash/credit sale tracking. Published and publicly available on the Google Play Store.",
+        "gallery": {
+          "login": "Login screen",
+          "dashboard": "Metrics dashboard",
+          "nuevaVenta": "New sale entry",
+          "reporteVentas": "Sales report",
+          "chatIa": "AI chat for income",
+          "egresosChat": "AI chat for expenses"
+        }
       }
     }
   },
   "technologies": {
-    "title": "Technologies"
+    "eyebrow": "Stack",
+    "title": "Technologies I use"
+  },
+  "education": {
+    "eyebrow": "Credentials",
+    "title": "Education",
+    "viewCredential": "View credential",
+    "items": {
+      "universidad": {
+        "title": "Bachelor's Degree in Systems Analysis",
+        "institution": "Universidad Americana",
+        "meta": "Asunción, Paraguay · September 17, 2024"
+      },
+      "codingdojo": {
+        "title": "Software Development Online Part-Time Accelerated",
+        "institution": "Coding Dojo",
+        "meta": "Software development bootcamp"
+      },
+      "linkedin": {
+        "title": "Career Essentials in Data Analysis",
+        "institution": "Microsoft and LinkedIn Learning",
+        "meta": "July 4, 2023"
+      }
+    }
   },
   "contact": {
-    "title": "Want to work with me?",
-    "description": "Reach out to collaborate on modern and optimized web projects.",
-    "button": "Contact me"
+    "eyebrow": "Direct contact",
+    "title": "Let's talk about your project",
+    "description": "Message me on WhatsApp or email and I'll get back to you shortly.",
+    "button": "Contact me",
+    "phoneLabel": "WhatsApp",
+    "emailLabel": "Email"
   },
   "footer": {
     "copy": "© {{year}} Angel | All rights reserved"
