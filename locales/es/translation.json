@@ -28,6 +28,7 @@
     "openGallery": "Ampliar galería de {{title}}",
     "videoUnsupported": "Tu navegador no soporta la reproducción de video.",
     "alt": "Captura de pantalla de {{title}}",
+    "liveLink": "Link de producción",
     "items": {
       "ecommerce": {
         "title": "Ecommerce",

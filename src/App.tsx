@@ -41,7 +41,7 @@ import {
   SiGoogleplay,
   SiWhatsapp,
 } from "react-icons/si";
-import { PiFileJsFill, PiDatabaseFill, PiArrowUpRightBold, PiCertificateFill, PiDownloadSimpleBold, PiEyeBold, PiEnvelopeSimpleBold } from "react-icons/pi";
+import { PiFileJsFill, PiDatabaseFill, PiArrowUpRightBold, PiCertificateFill, PiDownloadSimpleBold, PiEyeBold, PiEnvelopeSimpleBold, PiGlobeBold } from "react-icons/pi";
 import { SiGooglescholar } from "react-icons/si";
 import type { JSX } from "react";
 
@@ -234,6 +234,7 @@ export default function App() {
         imagen: imagenSys,
         description: t("projects.items.inventory.description"),
         link: "https://github.com/angeljrcurtido2/Project_Vite_React_TSX",
+        demo: "http://sistemafinanciero2026.netlify.app/",
         tecnologias: [
           "Electron", "Vite", "React", "TypeScript", "Tailwind CSS", "Headless UI",
           "Heroicons", "Lucide Icons", "React Router", "Zustand", "react-apexcharts",
@@ -495,6 +496,17 @@ export default function App() {
                       >
                         {t("projects.viewGallery")}
                       </button>
+                    )}
+                    {"demo" in project && project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-teal hover:text-teal-dim transition-colors"
+                      >
+                        <PiGlobeBold />
+                        {t("projects.liveLink")}
+                      </a>
                     )}
                     {project.key === "kontrolx" && (
                       <a

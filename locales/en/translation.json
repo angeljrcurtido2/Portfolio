@@ -28,6 +28,7 @@
     "openGallery": "Expand {{title}} gallery",
     "videoUnsupported": "Your browser does not support video playback.",
     "alt": "Screenshot of {{title}}",
+    "liveLink": "Live link",
     "items": {
       "ecommerce": {
         "title": "Ecommerce",
