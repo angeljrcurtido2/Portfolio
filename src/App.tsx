@@ -236,7 +236,6 @@ export default function App() {
         imagen: kontrolxGaleria[0].src,
         description: t("projects.items.kontrolx.description"),
         link: "https://github.com/angeljrcurtido2/sysapp",
-        demo: "https://app.inventariofacil.shop",
         tieneGaleria: "kontrolx" as const,
         featured: true,
         meta: t("projects.items.kontrolx.meta"),
