@@ -7,12 +7,13 @@
     "projects": "Projects",
     "technologies": "Technologies",
     "education": "Education",
-    "contact": "Contact"
+    "contact": "Contact",
+    "ecosystem": "Ecosystem"
   },
   "hero": {
     "eyebrow": "Available for freelance work",
     "title": "Angel Curtido builds software companies use every day",
-    "description": "Systems Analysis graduate and full-stack developer. I design interfaces with React, Next.js, and TypeScript, and build desktop systems and backends with .NET, Node.js, and PHP/Laravel. My latest project is a credit sales system in active production across 14 branches of a real business.",
+    "description": "Systems Analysis graduate and full-stack developer. I design interfaces with React, Next.js, and TypeScript, and build desktop, web, mobile systems and backends with .NET, Node.js, and PHP/Laravel. My latest project is InventarioFácil, my own platform with a web app, a Google Play app, a website and a YouTube channel, alongside a credit sales system in active production across 15 branches of a real business.",
     "button": "View my projects",
     "previewCv": "Preview CV",
     "downloadCv": "Download CV"
@@ -44,8 +45,8 @@
       },
       "credisoft": {
         "title": "ElectroMar / CrediSoft — Credit Sales System",
-        "meta": "Client: Credimar S.A. · 14 branches · Paraguay",
-        "description": "Custom-built desktop system for Credimar S.A., an appliance retailer with 14 branches in Paraguay. Built with C#/.NET 8 (WPF) and SQL Server, it manages the full credit and cash sales cycle: applications, installment collection, adjustments and Inforconf integration, per-branch cash register, purchases and inter-branch transfers, credit-note discounts, PDF reporting, and cross-branch sync via Cloudflare Tunnel. Freelance project in active production since 2026, successfully deployed and used daily by staff across all 14 branches.",
+        "meta": "Client: Credimar S.A. · 15 branches · Paraguay",
+        "description": "Custom-built desktop system for Credimar S.A., an appliance retailer with 15 branches in Paraguay. Built with C#/.NET 8 (WPF) and SQL Server, it manages the full credit and cash sales cycle: applications, installment collection, adjustments and Inforconf integration, per-branch cash register, purchases and inter-branch transfers, credit-note discounts, PDF reporting, and cross-branch sync via Cloudflare Tunnel. Freelance project in active production since 2026, successfully deployed and used daily by staff across all 15 branches.",
         "gallery": {
           "login": "Login screen",
           "dashboard": "Main dashboard",
@@ -54,10 +55,10 @@
         }
       },
       "kontrolx": {
-        "title": "KontrolX — Sales App with AI Chat",
-        "meta": "Published on Google Play · React Native / Expo",
+        "title": "InventarioFácil / KontrolX — Management Platform with AI",
+        "meta": "Web + Google Play app + Website + YouTube · Own product",
         "playStore": "View on Google Play",
-        "description": "Mobile app for managing sales, customers, products, and suppliers, built with React Native and Expo. Its standout feature is an AI chat system that lets users log income and expenses by typing natural-language commands, like \"Log income of 150 from equipment sale\", skipping forms entirely. It includes a business metrics dashboard, filterable sales reports, and cash/credit sale tracking. Published and publicly available on the Google Play Store.",
+        "description": "Sales, purchasing, inventory and cash platform for retailers, with a web app, a mobile app published on Google Play and a multi-account backend of my own (Node.js, Express, MySQL). It covers cash and credit sales with installment collection, batches and expiry alerts, live cash registers per employee, per-module permissions, licenses with extensions, promotions, a flyer generator and an AI assistant that logs income and expenses from natural-language messages and loads products and invoices from a photo. It also has a website, a scheduled blog and a YouTube channel with tutorial videos.",
         "gallery": {
           "login": "Login screen",
           "dashboard": "Metrics dashboard",
@@ -66,6 +67,11 @@
           "chatIa": "AI chat for income",
           "egresosChat": "AI chat for expenses"
         }
+      },
+      "midespensa": {
+        "title": "Mi Despensa — Free management app",
+        "meta": "midespensa.shop · In production · Own product",
+        "description": "Free version of my management platform for small shops, live at midespensa.shop. A web app built with React, TypeScript and Vite, with Google sign-in, a reduced menu, a mobile-friendly interface and its own visual identity. It shares the backend (Node.js, Express, MySQL) with the paid system, where the free-plan limits are enforced."
       }
     }
   },
@@ -105,5 +111,31 @@
   },
   "footer": {
     "copy": "© {{year}} Angel | All rights reserved"
+  },
+  "ecosystem": {
+    "eyebrow": "InventarioFácil ecosystem",
+    "title": "One product, four channels",
+    "items": {
+      "web": {
+        "title": "Web app",
+        "description": "Sales, purchasing, inventory, cash registers and reports in the browser, with work tabs and role-based permissions.",
+        "cta": "Open the web app"
+      },
+      "app": {
+        "title": "Mobile app",
+        "description": "Android version published on Google Play, with barcode scanner, AI chat and installment collection.",
+        "cta": "View on Google Play"
+      },
+      "site": {
+        "title": "Website and blog",
+        "description": "Presentation site with a scheduled blog and a tutorials page.",
+        "cta": "Visit the site"
+      },
+      "youtube": {
+        "title": "YouTube channel",
+        "description": "Narrated tutorial videos that teach how to use the web app and the mobile app step by step.",
+        "cta": "Watch the tutorials"
+      }
+    }
   }
 }

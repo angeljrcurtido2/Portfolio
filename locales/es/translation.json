@@ -7,12 +7,13 @@
     "projects": "Proyectos",
     "technologies": "Tecnologías",
     "education": "Formación",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "ecosystem": "Ecosistema"
   },
   "hero": {
     "eyebrow": "Disponible para proyectos freelance",
     "title": "Angel Curtido construye software que las empresas usan todos los días",
-    "description": "Licenciado en Análisis de Sistemas y desarrollador full-stack. Diseño interfaces con React, Next.js y TypeScript, y construyo sistemas de escritorio y backend con .NET, Node.js y PHP/Laravel. Mi último proyecto es un sistema de ventas a crédito en producción activa en 14 sucursales de una empresa real.",
+    "description": "Licenciado en Análisis de Sistemas y desarrollador full-stack. Diseño interfaces con React, Next.js y TypeScript, y construyo sistemas de escritorio, web, móviles y backend con .NET, Node.js y PHP/Laravel. Mi proyecto más reciente es InventarioFácil, una plataforma propia con web, app en Google Play, sitio y canal de YouTube, además de un sistema de ventas a crédito en producción activa en 15 sucursales de una empresa real.",
     "button": "Ver mis proyectos",
     "previewCv": "Vista previa del CV",
     "downloadCv": "Descargar CV"
@@ -44,8 +45,8 @@
       },
       "credisoft": {
         "title": "ElectroMar / CrediSoft — Sistema de Ventas a Crédito",
-        "meta": "Cliente: Credimar S.A. · 14 sucursales · Paraguay",
-        "description": "Sistema de escritorio a medida para Credimar S.A., empresa de electrodomésticos con 14 sucursales en Paraguay. Desarrollado en C#/.NET 8 (WPF) con SQL Server, gestiona todo el ciclo de ventas a crédito y contado: solicitudes, cobro de cuotas, reajustes e Inforconf, caja por sucursal, compras y transferencias entre locales, descuentos por Nota de Crédito, informes con generación de PDF, y sincronización entre sucursales vía Cloudflare Tunnel. Proyecto freelance en producción activa desde 2026, implementado exitosamente y en uso diario por el personal de las 14 sucursales.",
+        "meta": "Cliente: Credimar S.A. · 15 sucursales · Paraguay",
+        "description": "Sistema de escritorio a medida para Credimar S.A., empresa de electrodomésticos con 15 sucursales en Paraguay. Desarrollado en C#/.NET 8 (WPF) con SQL Server, gestiona todo el ciclo de ventas a crédito y contado: solicitudes, cobro de cuotas, reajustes e Inforconf, caja por sucursal, compras y transferencias entre locales, descuentos por Nota de Crédito, informes con generación de PDF, y sincronización entre sucursales vía Cloudflare Tunnel. Proyecto freelance en producción activa desde 2026, implementado exitosamente y en uso diario por el personal de las 15 sucursales.",
         "gallery": {
           "login": "Inicio de sesión",
           "dashboard": "Dashboard principal",
@@ -54,10 +55,10 @@
         }
       },
       "kontrolx": {
-        "title": "KontrolX — App de Ventas con Chat IA",
-        "meta": "Publicada en Google Play · React Native / Expo",
+        "title": "InventarioFácil / KontrolX — Plataforma de gestión con IA",
+        "meta": "Web + App en Google Play + Sitio + YouTube · Producto propio",
         "playStore": "Ver en Google Play",
-        "description": "Aplicación móvil de gestión de ventas, clientes, productos y proveedores construida con React Native y Expo. Su función más distintiva es un sistema de chat con IA que permite registrar ingresos y egresos escribiendo comandos en lenguaje natural, como \"Registrar un ingreso de 150 por venta de equipos\", sin pasar por formularios. Incluye dashboard con métricas de negocio, reportes de ventas filtrables y control de contado/crédito. Publicada y disponible públicamente en Google Play Store.",
+        "description": "Plataforma de ventas, compras, inventario y caja para comercios, con aplicación web, app móvil publicada en Google Play y un backend propio multi-cuenta (Node.js, Express, MySQL). Incluye ventas a contado y crédito con cobro de cuotas, lotes y alertas de vencimiento, cajas en vivo por funcionario, permisos por módulo, licencias con prórrogas, promociones, generador de flyers y un asistente con IA que registra ingresos y egresos escribiendo en lenguaje natural y carga productos y facturas desde una foto. Cuenta con sitio web, blog con publicación programada y un canal de YouTube con videos tutoriales.",
         "gallery": {
           "login": "Inicio de sesión",
           "dashboard": "Dashboard con métricas",
@@ -66,6 +67,11 @@
           "chatIa": "Chat con IA para ingresos",
           "egresosChat": "Chat con IA para egresos"
         }
+      },
+      "midespensa": {
+        "title": "Mi Despensa — Versión gratuita de gestión",
+        "meta": "midespensa.shop · En producción · Producto propio",
+        "description": "Versión gratuita de mi plataforma de gestión para pequeños comercios, publicada en midespensa.shop. Aplicación web en React, TypeScript y Vite, con inicio de sesión con Google, menú reducido, interfaz adaptada al celular y su propia identidad visual. Comparte el backend (Node.js, Express, MySQL) con el sistema de pago, donde se aplican los límites del plan gratuito."
       }
     }
   },
@@ -105,5 +111,31 @@
   },
   "footer": {
     "copy": "© {{year}} Angel | Todos los derechos reservados"
+  },
+  "ecosystem": {
+    "eyebrow": "Ecosistema InventarioFácil",
+    "title": "Un producto, cuatro canales",
+    "items": {
+      "web": {
+        "title": "Aplicación web",
+        "description": "Ventas, compras, inventario, cajas e informes desde el navegador, con pestañas de trabajo y permisos por rol.",
+        "cta": "Abrir la web"
+      },
+      "app": {
+        "title": "App móvil",
+        "description": "Versión Android publicada en Google Play, con escáner de código de barras, chat con IA y cobro de cuotas.",
+        "cta": "Ver en Google Play"
+      },
+      "site": {
+        "title": "Sitio web y blog",
+        "description": "Sitio de presentación con blog de publicación programada y página de tutoriales.",
+        "cta": "Visitar el sitio"
+      },
+      "youtube": {
+        "title": "Canal de YouTube",
+        "description": "Videos tutoriales con voz que enseñan a usar la web y la app paso a paso.",
+        "cta": "Ver los tutoriales"
+      }
+    }
   }
 }

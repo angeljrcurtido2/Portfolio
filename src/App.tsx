@@ -40,8 +40,9 @@ import {
   SiAxios,
   SiGoogleplay,
   SiWhatsapp,
+  SiYoutube,
 } from "react-icons/si";
-import { PiFileJsFill, PiDatabaseFill, PiArrowUpRightBold, PiCertificateFill, PiDownloadSimpleBold, PiEyeBold, PiEnvelopeSimpleBold, PiGlobeBold } from "react-icons/pi";
+import { PiFileJsFill, PiDatabaseFill, PiArrowUpRightBold, PiCertificateFill, PiDownloadSimpleBold, PiEyeBold, PiEnvelopeSimpleBold, PiGlobeBold, PiDeviceMobileBold, PiBrowserBold } from "react-icons/pi";
 import { SiGooglescholar } from "react-icons/si";
 import type { JSX } from "react";
 
@@ -80,6 +81,17 @@ const credenciales = [
   },
 ];
 
+const ecosistema = [
+  { key: "web", href: "https://app.inventariofacil.shop", icon: <PiBrowserBold /> },
+  {
+    key: "app",
+    href: "https://play.google.com/store/apps/details?id=com.angeljrcurtido.kontrolx&hl=es",
+    icon: <PiDeviceMobileBold />,
+  },
+  { key: "site", href: "https://www.inventariofacil.site", icon: <PiGlobeBold /> },
+  { key: "youtube", href: "https://www.inventariofacil.site/tutoriales", icon: <SiYoutube /> },
+];
+
 const terminalSessions = [
   {
     tab: "electromar.exe",
@@ -87,7 +99,7 @@ const terminalSessions = [
       { prompt: "~/credimar-sa", cmd: "git log --oneline -1" },
       { out: "c8e4172 feat: descuentos por nota de credito" },
       { prompt: "~/credimar-sa", cmd: "dotnet run --project ElectroMar" },
-      { out: "[14/14 sucursales] Cloudflare Tunnel: conectado" },
+      { out: "[15/15 sucursales] Cloudflare Tunnel: conectado" },
       { out: "Sistema listo. Usuarios activos: 37" },
     ],
   },
@@ -99,6 +111,15 @@ const terminalSessions = [
       { prompt: "~/sysapp", cmd: 'chat.parse("Ingreso de 150 por venta de equipos")' },
       { out: "✓ Ingreso registrado: Gs. 150 · categoria: ventas" },
       { out: "Publicado en Google Play · com.angeljrcurtido.kontrolx" },
+    ],
+  },
+  {
+    tab: "inventariofacil",
+    lines: [
+      { prompt: "~/server", cmd: "node server.js" },
+      { out: "API multi-cuenta lista · licencias y permisos activos" },
+      { prompt: "~/web", cmd: "npm run build" },
+      { out: "✓ app.inventariofacil.shop publicada · app en Google Play" },
     ],
   },
   {
@@ -218,7 +239,17 @@ export default function App() {
         tieneGaleria: "kontrolx" as const,
         featured: true,
         meta: t("projects.items.kontrolx.meta"),
-        tecnologias: ["Expo", "React Native", "TypeScript", "Zustand", "Axios", "NativeWind", "Expo Router", "Git"],
+        tecnologias: ["React", "React Native", "Expo", "TypeScript", "Node.js", "Express", "MySQL", "Zustand", "Axios", "NativeWind", "Expo Router", "Git"],
+      },
+      {
+        key: "midespensa",
+        title: t("projects.items.midespensa.title"),
+        imagen: "/midespensa/login.png",
+        description: t("projects.items.midespensa.description"),
+        link: "https://midespensa.shop",
+        featured: true,
+        meta: t("projects.items.midespensa.meta"),
+        tecnologias: ["React", "TypeScript", "Vite", "Tailwind CSS", "Axios", "Node.js", "Express", "MySQL", "Git"],
       },
       {
         key: "ecommerce",
@@ -275,6 +306,9 @@ export default function App() {
           <nav className="flex items-center gap-6 font-mono text-sm">
             <a href="#projects" className="hidden sm:inline text-paper-dim hover:text-teal transition-colors">
               {t("nav.projects")}
+            </a>
+            <a href="#ecosystem" className="hidden sm:inline text-paper-dim hover:text-teal transition-colors">
+              {t("nav.ecosystem")}
             </a>
             <a href="#technologies" className="hidden sm:inline text-paper-dim hover:text-teal transition-colors">
               {t("nav.technologies")}
@@ -522,6 +556,39 @@ export default function App() {
                   </div>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ecosystem */}
+      <section id="ecosystem" className="py-24 px-6 border-t border-ink-line">
+        <div className="max-w-6xl mx-auto">
+          <p className="font-mono text-sm text-teal mb-2">{t("ecosystem.eyebrow")}</p>
+          <h2 className="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-12">
+            {t("ecosystem.title")}
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {ecosistema.map((item) => (
+              <a
+                key={item.key}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-2xl border border-ink-line bg-ink-soft p-6 flex flex-col hover:border-teal/40 transition-colors"
+              >
+                <span className="text-2xl text-teal mb-4">{item.icon}</span>
+                <h3 className="font-display font-semibold text-lg mb-2 text-balance">
+                  {t(`ecosystem.items.${item.key}.title`)}
+                </h3>
+                <p className="text-paper-dim text-sm leading-relaxed mb-5">
+                  {t(`ecosystem.items.${item.key}.description`)}
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-teal group-hover:text-teal-dim transition-colors mt-auto">
+                  {t(`ecosystem.items.${item.key}.cta`)}
+                  <PiArrowUpRightBold />
+                </span>
+              </a>
             ))}
           </div>
         </div>
