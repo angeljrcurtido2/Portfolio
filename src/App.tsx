@@ -82,7 +82,7 @@ const credenciales = [
 ];
 
 const ecosistema = [
-  { key: "web", href: "https://app.inventariofacil.shop", icon: <PiBrowserBold /> },
+  { key: "web", href: "https://inventariofacil.shop", icon: <PiBrowserBold /> },
   {
     key: "app",
     href: "https://play.google.com/store/apps/details?id=com.angeljrcurtido.kontrolx&hl=es",
@@ -119,7 +119,7 @@ const terminalSessions = [
       { prompt: "~/server", cmd: "node server.js" },
       { out: "API multi-cuenta lista · licencias y permisos activos" },
       { prompt: "~/web", cmd: "npm run build" },
-      { out: "✓ app.inventariofacil.shop publicada · app en Google Play" },
+      { out: "✓ inventariofacil.shop publicada · app en Google Play" },
     ],
   },
   {
