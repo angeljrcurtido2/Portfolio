@@ -72,6 +72,11 @@
         "title": "Mi Despensa — Versión gratuita de gestión",
         "meta": "midespensa.shop · En producción · Producto propio",
         "description": "Versión gratuita de mi plataforma de gestión para pequeños comercios, publicada en midespensa.shop. Aplicación web en React, TypeScript y Vite, con inicio de sesión con Google, menú reducido, interfaz adaptada al celular y su propia identidad visual. Comparte el backend (Node.js, Express, MySQL) con el sistema de pago, donde se aplican los límites del plan gratuito."
+      },
+      "inventariofacilsite": {
+        "title": "InventarioFácil — Sitio web y blog",
+        "meta": "inventariofacil.site · En producción · Producto propio",
+        "description": "Sitio de presentación de InventarioFácil, hecho con Next.js, React y TypeScript. Incluye páginas por rubro, página de tutoriales en video y un blog con publicación programada por fecha, con sitemap y metadatos para buscadores."
       }
     }
   },

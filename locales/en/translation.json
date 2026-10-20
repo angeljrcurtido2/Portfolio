@@ -72,6 +72,11 @@
         "title": "Mi Despensa — Free management app",
         "meta": "midespensa.shop · In production · Own product",
         "description": "Free version of my management platform for small shops, live at midespensa.shop. A web app built with React, TypeScript and Vite, with Google sign-in, a reduced menu, a mobile-friendly interface and its own visual identity. It shares the backend (Node.js, Express, MySQL) with the paid system, where the free-plan limits are enforced."
+      },
+      "inventariofacilsite": {
+        "title": "InventarioFácil — Website and blog",
+        "meta": "inventariofacil.site · In production · Own product",
+        "description": "Presentation site for InventarioFácil, built with Next.js, React and TypeScript. It includes pages per business type, a video tutorials page and a blog with date-scheduled publishing, plus a sitemap and search metadata."
       }
     }
   },
